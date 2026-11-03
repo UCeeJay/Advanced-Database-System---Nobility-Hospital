@@ -5,12 +5,12 @@
 -- =========================================================================
 
 -- Drop tables if they already exist (clean re-initialisation order)
-DROP TABLE IF EXISTS lab_records CASCADE;
-DROP TABLE IF EXISTS prescriptions CASCADE;
-DROP TABLE IF EXISTS medical_records CASCADE;
-DROP TABLE IF EXISTS appointments CASCADE;
-DROP TABLE IF EXISTS doctors CASCADE;
-DROP TABLE IF EXISTS patients CASCADE;
+DROP TABLE IF EXISTS lab_records;
+DROP TABLE IF EXISTS prescriptions;
+DROP TABLE IF EXISTS medical_records;
+DROP TABLE IF EXISTS appointments;
+DROP TABLE IF EXISTS doctors;
+DROP TABLE IF EXISTS patients;
 
 -- 1. Patients Table
 CREATE TABLE patients (
