@@ -1,5 +1,3 @@
-# Portfolio 1: Database Design and Modelling - Nobility Hospital
-
 ## 1. Case Study Overview
 * **Organisation Name:** Nobility Hospital
 * **Nature of Business:** A multi-specialty healthcare institution delivering outpatient care, emergency diagnostics, inpatient admissions, pharmaceutical dispensations, and laboratory pathology testing.
@@ -7,7 +5,8 @@
 * **Core Operations:** Registering patient profiles, scheduling/rescheduling clinical appointments, capturing clinical diagnoses and treatment plans, issuing electronic prescriptions, and tracking laboratory test workflows.
 
 ## 2. Entity-Relationship (ER) Diagram
-*(Insert your exported ER diagram image here, e.g., `![ER Diagram](er_diagram.png)`)*
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/f977bdff-768c-413a-a6cb-bf1f5c002609" />
+
 
 ### Relationship Summary:
 * **Patients to Appointments (1:M):** A patient can book multiple appointments over time.
