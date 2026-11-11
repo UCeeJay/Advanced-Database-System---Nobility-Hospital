@@ -1,0 +1,52 @@
+# portfolio-5-distributed-cloud/docker-compose.yml
+# =========================================================================
+# MIT 8103 Advanced Database Systems - Portfolio 5: Distributed & Cloud
+# Case Study: Nobility Hospital System
+# Deployment Setup: PostgreSQL High-Availability (HA) Primary-Replica Cluster
+# =========================================================================
+
+version: '3.8'
+
+services:
+  nobility-db-primary:
+    image: bitnami/postgresql:16
+    container_name: nobility_primary
+    environment:
+      - POSTGRESQL_REPLICATION_MODE=master
+      - POSTGRESQL_REPLICATION_USER=repl_user
+      - POSTGRESQL_REPLICATION_PASSWORD=repl_password
+      - POSTGRESQL_USERNAME=hospital_admin
+      - POSTGRESQL_PASSWORD=hospital_secure_pass
+      - POSTGRESQL_DATABASE=nobility_hospital
+    ports:
+      - "5432:5432"
+    volumes:
+      - primary_data:/bitnami/postgresql
+    networks:
+      - nobility_network
+
+  nobility-db-replica:
+    image: bitnami/postgresql:16
+    container_name: nobility_read_replica
+    depends_on:
+      - nobility-db-primary
+    environment:
+      - POSTGRESQL_REPLICATION_MODE=slave
+      - POSTGRESQL_REPLICATION_USER=repl_user
+      - POSTGRESQL_REPLICATION_PASSWORD=repl_password
+      - POSTGRESQL_MASTER_HOST=nobility-db-primary
+      - POSTGRESQL_MASTER_PORT_NUMBER=5432
+    ports:
+      - "5433:5432"
+    volumes:
+      - replica_data:/bitnami/postgresql
+    networks:
+      - nobility_network
+
+networks:
+  nobility_network:
+    driver: bridge
+
+volumes:
+  primary_data:
+  replica_data:
