@@ -34,6 +34,7 @@ services:
       - POSTGRESQL_REPLICATION_PASSWORD=repl_password
       - POSTGRESQL_MASTER_HOST=nobility-db-primary
       - POSTGRESQL_MASTER_PORT_NUMBER=5432
+      - POSTGRESQL_PASSWORD=hospital_secure_pass
     ports:
       - "5433:5432"
     volumes:
