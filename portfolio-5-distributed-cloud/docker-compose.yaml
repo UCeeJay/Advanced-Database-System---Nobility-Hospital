@@ -5,11 +5,9 @@
 # Deployment Setup: PostgreSQL High-Availability (HA) Primary-Replica Cluster
 # =========================================================================
 
-version: '3.8'
-
 services:
   nobility-db-primary:
-    image: bitnami/postgresql:16
+    image: bitnamilegacy/postgresql:16.4.0-debian-12-r7
     container_name: nobility_primary
     environment:
       - POSTGRESQL_REPLICATION_MODE=master
@@ -26,7 +24,7 @@ services:
       - nobility_network
 
   nobility-db-replica:
-    image: bitnami/postgresql:16
+    image: bitnamilegacy/postgresql:16.4.0-debian-12-r7
     container_name: nobility_read_replica
     depends_on:
       - nobility-db-primary
