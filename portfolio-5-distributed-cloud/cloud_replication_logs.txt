@@ -1,38 +1,64 @@
-nobility_read_replica  | [38;5;6mpostgresql [38;5;5m02:08:30.17 [0m[38;5;2mINFO [0m ==> 
-nobility_read_replica  | [38;5;6mpostgresql [38;5;5m02:08:30.17 [0m[38;5;2mINFO [0m ==> [1mWelcome to the Bitnami postgresql container[0m
-nobility_read_replica  | [38;5;6mpostgresql [38;5;5m02:08:30.17 [0m[38;5;2mINFO [0m ==> Subscribe to project updates by watching [1mhttps://github.com/bitnami/containers[0m
-nobility_read_replica  | [38;5;6mpostgresql [38;5;5m02:08:30.17 [0m[38;5;2mINFO [0m ==> Submit issues and feature requests at [1mhttps://github.com/bitnami/containers/issues[0m
-nobility_read_replica  | [38;5;6mpostgresql [38;5;5m02:08:30.18 [0m[38;5;2mINFO [0m ==> Upgrade to Tanzu Application Catalog for production environments to access custom-configured and pre-packaged software components. Gain enhanced features, including Software Bill of Materials (SBOM), CVE scan result reports, and VEX documents. To learn more, visit [1mhttps://bitnami.com/enterprise[0m
-nobility_read_replica  | [38;5;6mpostgresql [38;5;5m02:08:30.18 [0m[38;5;2mINFO [0m ==> 
-nobility_read_replica  | [38;5;6mpostgresql [38;5;5m02:08:30.21 [0m[38;5;2mINFO [0m ==> ** Starting PostgreSQL setup **
-nobility_read_replica  | [38;5;6mpostgresql [38;5;5m02:08:30.25 [0m[38;5;2mINFO [0m ==> Validating settings in POSTGRESQL_* env vars..
-nobility_read_replica  | [38;5;6mpostgresql [38;5;5m02:08:30.26 [0m[38;5;2mINFO [0m ==> Loading custom pre-init scripts...
-nobility_read_replica  | [38;5;6mpostgresql [38;5;5m02:08:30.27 [0m[38;5;2mINFO [0m ==> Initializing PostgreSQL database...
-nobility_read_replica  | [38;5;6mpostgresql [38;5;5m02:08:30.30 [0m[38;5;2mINFO [0m ==> pg_hba.conf file not detected. Generating it...
-nobility_read_replica  | [38;5;6mpostgresql [38;5;5m02:08:30.31 [0m[38;5;2mINFO [0m ==> Generating local authentication configuration
-nobility_read_replica  | [38;5;6mpostgresql [38;5;5m02:08:30.33 [0m[38;5;2mINFO [0m ==> Waiting for replication master to accept connections (60 timeout)...
+nobility_primary  | [38;5;6mpostgresql [38;5;5m18:37:48.65 [0m[38;5;2mINFO [0m ==> 
+nobility_primary  | [38;5;6mpostgresql [38;5;5m18:37:48.66 [0m[38;5;2mINFO [0m ==> [1mWelcome to the Bitnami postgresql container[0m
+nobility_primary  | [38;5;6mpostgresql [38;5;5m18:37:48.67 [0m[38;5;2mINFO [0m ==> Subscribe to project updates by watching [1mhttps://github.com/bitnami/containers[0m
+nobility_primary  | [38;5;6mpostgresql [38;5;5m18:37:48.67 [0m[38;5;2mINFO [0m ==> Submit issues and feature requests at [1mhttps://github.com/bitnami/containers/issues[0m
+nobility_primary  | [38;5;6mpostgresql [38;5;5m18:37:48.68 [0m[38;5;2mINFO [0m ==> Upgrade to Tanzu Application Catalog for production environments to access custom-configured and pre-packaged software components. Gain enhanced features, including Software Bill of Materials (SBOM), CVE scan result reports, and VEX documents. To learn more, visit [1mhttps://bitnami.com/enterprise[0m
+nobility_primary  | [38;5;6mpostgresql [38;5;5m18:37:48.68 [0m[38;5;2mINFO [0m ==> 
+nobility_primary  | [38;5;6mpostgresql [38;5;5m18:37:48.74 [0m[38;5;2mINFO [0m ==> ** Starting PostgreSQL setup **
+nobility_primary  | [38;5;6mpostgresql [38;5;5m18:37:48.79 [0m[38;5;2mINFO [0m ==> Validating settings in POSTGRESQL_* env vars..
+nobility_primary  | [38;5;6mpostgresql [38;5;5m18:37:48.81 [0m[38;5;2mINFO [0m ==> Loading custom pre-init scripts...
+nobility_primary  | [38;5;6mpostgresql [38;5;5m18:37:48.83 [0m[38;5;2mINFO [0m ==> Initializing PostgreSQL database...
+nobility_primary  | [38;5;6mpostgresql [38;5;5m18:37:48.88 [0m[38;5;2mINFO [0m ==> pg_hba.conf file not detected. Generating it...
+nobility_primary  | [38;5;6mpostgresql [38;5;5m18:37:48.88 [0m[38;5;2mINFO [0m ==> Generating local authentication configuration
+nobility_primary  | [38;5;6mpostgresql [38;5;5m18:37:50.85 [0m[38;5;2mINFO [0m ==> Starting PostgreSQL in background...
+nobility_primary  | [38;5;6mpostgresql [38;5;5m18:37:52.04 [0m[38;5;2mINFO [0m ==> Creating user hospital_admin
+nobility_primary  | [38;5;6mpostgresql [38;5;5m18:37:52.07 [0m[38;5;2mINFO [0m ==> Granting access to "hospital_admin" to the database "nobility_hospital"
+nobility_primary  | [38;5;6mpostgresql [38;5;5m18:37:52.10 [0m[38;5;2mINFO [0m ==> Setting ownership for the 'public' schema database "nobility_hospital" to "hospital_admin"
+nobility_primary  | [38;5;6mpostgresql [38;5;5m18:37:52.13 [0m[38;5;2mINFO [0m ==> Creating replication user repl_user
+nobility_primary  | [38;5;6mpostgresql [38;5;5m18:37:52.16 [0m[38;5;2mINFO [0m ==> Configuring replication parameters
+nobility_primary  | [38;5;6mpostgresql [38;5;5m18:37:52.20 [0m[38;5;2mINFO [0m ==> Configuring synchronous_replication
+nobility_primary  | [38;5;6mpostgresql [38;5;5m18:37:52.20 [0m[38;5;2mINFO [0m ==> Configuring fsync
+nobility_primary  | [38;5;6mpostgresql [38;5;5m18:37:52.23 [0m[38;5;2mINFO [0m ==> Stopping PostgreSQL...
+nobility_primary  | waiting for server to shut down.... done
+nobility_primary  | server stopped
+nobility_primary  | [38;5;6mpostgresql [38;5;5m18:37:52.34 [0m[38;5;2mINFO [0m ==> Loading custom scripts...
+nobility_primary  | [38;5;6mpostgresql [38;5;5m18:37:52.35 [0m[38;5;2mINFO [0m ==> Enabling remote connections
+nobility_primary  | [38;5;6mpostgresql [38;5;5m18:37:52.36 [0m[38;5;2mINFO [0m ==> ** PostgreSQL setup finished! **
+nobility_primary  | 
+nobility_primary  | [38;5;6mpostgresql [38;5;5m18:37:52.38 [0m[38;5;2mINFO [0m ==> ** Starting PostgreSQL **
+nobility_primary  | 2026-11-15 18:37:52.395 GMT [1] LOG:  pgaudit extension initialized
+nobility_primary  | 2026-11-15 18:37:52.406 GMT [1] LOG:  starting PostgreSQL 16.4 on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+nobility_primary  | 2026-11-15 18:37:52.406 GMT [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+nobility_primary  | 2026-11-15 18:37:52.407 GMT [1] LOG:  listening on IPv6 address "::", port 5432
+nobility_primary  | 2026-11-15 18:37:52.409 GMT [1] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+nobility_primary  | 2026-11-15 18:37:52.414 GMT [150] LOG:  database system was shut down at 2026-11-15 18:37:52 GMT
+nobility_primary  | 2026-11-15 18:37:52.422 GMT [1] LOG:  database system is ready to accept connections
+nobility_primary  | 2026-11-15 18:37:53.410 GMT [148] LOG:  checkpoint starting: force wait
+nobility_primary  | 2026-11-15 18:37:53.544 GMT [148] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.104 s, sync=0.002 s, total=0.135 s; sync files=3, longest=0.001 s, average=0.001 s; distance=7093 kB, estimate=7093 kB; lsn=0/2000060, redo lsn=0/2000028
+nobility_read_replica  | [38;5;6mpostgresql [38;5;5m18:37:49.01 [0m[38;5;2mINFO [0m ==> 
+nobility_read_replica  | [38;5;6mpostgresql [38;5;5m18:37:49.01 [0m[38;5;2mINFO [0m ==> [1mWelcome to the Bitnami postgresql container[0m
+nobility_read_replica  | [38;5;6mpostgresql [38;5;5m18:37:49.01 [0m[38;5;2mINFO [0m ==> Subscribe to project updates by watching [1mhttps://github.com/bitnami/containers[0m
+nobility_read_replica  | [38;5;6mpostgresql [38;5;5m18:37:49.02 [0m[38;5;2mINFO [0m ==> Submit issues and feature requests at [1mhttps://github.com/bitnami/containers/issues[0m
+nobility_read_replica  | [38;5;6mpostgresql [38;5;5m18:37:49.02 [0m[38;5;2mINFO [0m ==> Upgrade to Tanzu Application Catalog for production environments to access custom-configured and pre-packaged software components. Gain enhanced features, including Software Bill of Materials (SBOM), CVE scan result reports, and VEX documents. To learn more, visit [1mhttps://bitnami.com/enterprise[0m
+nobility_read_replica  | [38;5;6mpostgresql [38;5;5m18:37:49.02 [0m[38;5;2mINFO [0m ==> 
+nobility_read_replica  | [38;5;6mpostgresql [38;5;5m18:37:49.05 [0m[38;5;2mINFO [0m ==> ** Starting PostgreSQL setup **
+nobility_read_replica  | [38;5;6mpostgresql [38;5;5m18:37:49.08 [0m[38;5;2mINFO [0m ==> Validating settings in POSTGRESQL_* env vars..
+nobility_read_replica  | [38;5;6mpostgresql [38;5;5m18:37:49.09 [0m[38;5;2mINFO [0m ==> Loading custom pre-init scripts...
+nobility_read_replica  | [38;5;6mpostgresql [38;5;5m18:37:49.12 [0m[38;5;2mINFO [0m ==> Initializing PostgreSQL database...
+nobility_read_replica  | [38;5;6mpostgresql [38;5;5m18:37:49.15 [0m[38;5;2mINFO [0m ==> pg_hba.conf file not detected. Generating it...
+nobility_read_replica  | [38;5;6mpostgresql [38;5;5m18:37:49.16 [0m[38;5;2mINFO [0m ==> Generating local authentication configuration
+nobility_read_replica  | [38;5;6mpostgresql [38;5;5m18:37:49.19 [0m[38;5;2mINFO [0m ==> Waiting for replication master to accept connections (60 timeout)...
 nobility_read_replica  | nobility-db-primary:5432 - no response
-nobility_primary       | [38;5;6mpostgresql [38;5;5m02:08:29.78 [0m[38;5;2mINFO [0m ==> 
-nobility_primary       | [38;5;6mpostgresql [38;5;5m02:08:29.78 [0m[38;5;2mINFO [0m ==> [1mWelcome to the Bitnami postgresql container[0m
-nobility_primary       | [38;5;6mpostgresql [38;5;5m02:08:29.78 [0m[38;5;2mINFO [0m ==> Subscribe to project updates by watching [1mhttps://github.com/bitnami/containers[0m
-nobility_primary       | [38;5;6mpostgresql [38;5;5m02:08:29.78 [0m[38;5;2mINFO [0m ==> Submit issues and feature requests at [1mhttps://github.com/bitnami/containers/issues[0m
-nobility_primary       | [38;5;6mpostgresql [38;5;5m02:08:29.79 [0m[38;5;2mINFO [0m ==> Upgrade to Tanzu Application Catalog for production environments to access custom-configured and pre-packaged software components. Gain enhanced features, including Software Bill of Materials (SBOM), CVE scan result reports, and VEX documents. To learn more, visit [1mhttps://bitnami.com/enterprise[0m
-nobility_primary       | [38;5;6mpostgresql [38;5;5m02:08:29.80 [0m[38;5;2mINFO [0m ==> 
-nobility_primary       | [38;5;6mpostgresql [38;5;5m02:08:29.85 [0m[38;5;2mINFO [0m ==> ** Starting PostgreSQL setup **
-nobility_primary       | [38;5;6mpostgresql [38;5;5m02:08:29.88 [0m[38;5;2mINFO [0m ==> Validating settings in POSTGRESQL_* env vars..
-nobility_primary       | [38;5;6mpostgresql [38;5;5m02:08:29.90 [0m[38;5;2mINFO [0m ==> Loading custom pre-init scripts...
-nobility_primary       | [38;5;6mpostgresql [38;5;5m02:08:29.91 [0m[38;5;2mINFO [0m ==> Initializing PostgreSQL database...
-nobility_primary       | [38;5;6mpostgresql [38;5;5m02:08:29.94 [0m[38;5;2mINFO [0m ==> pg_hba.conf file not detected. Generating it...
-nobility_primary       | [38;5;6mpostgresql [38;5;5m02:08:29.95 [0m[38;5;2mINFO [0m ==> Generating local authentication configuration
+nobility_read_replica  | nobility-db-primary:5432 - no response
 nobility_read_replica  | nobility-db-primary:5432 - no response
 nobility_read_replica  | nobility-db-primary:5432 - no response
 nobility_read_replica  | nobility-db-primary:5432 - accepting connections
-nobility_read_replica  | [38;5;6mpostgresql [38;5;5m02:08:33.41 [0m[38;5;2mINFO [0m ==> Replicating the initial database
+nobility_read_replica  | [38;5;6mpostgresql [38;5;5m18:37:53.37 [0m[38;5;2mINFO [0m ==> Replicating the initial database
 nobility_read_replica  | pg_basebackup: initiating base backup, waiting for checkpoint to complete
 nobility_read_replica  | pg_basebackup: checkpoint completed
 nobility_read_replica  | pg_basebackup: write-ahead log start point: 0/2000028 on timeline 1
 nobility_read_replica  | pg_basebackup: starting background WAL receiver
-nobility_read_replica  | pg_basebackup: created temporary replication slot "pg_basebackup_155"
+nobility_read_replica  | pg_basebackup: created temporary replication slot "pg_basebackup_156"
 nobility_read_replica  | 30553/30553 kB (100%), 0/1 tablespace (...ostgresql/data/global/pg_control)
 nobility_read_replica  | 30553/30553 kB (100%), 1/1 tablespace                                         
 nobility_read_replica  | pg_basebackup: write-ahead log end point: 0/2000100
@@ -40,57 +66,24 @@ nobility_read_replica  | pg_basebackup: waiting for background process to finish
 nobility_read_replica  | pg_basebackup: syncing data to disk ...
 nobility_read_replica  | pg_basebackup: renaming backup_manifest.tmp to backup_manifest
 nobility_read_replica  | pg_basebackup: base backup completed
-nobility_read_replica  | [38;5;6mpostgresql [38;5;5m02:08:33.98 [0m[38;5;2mINFO [0m ==> Configuring replication parameters
-nobility_read_replica  | [38;5;6mpostgresql [38;5;5m02:08:34.01 [0m[38;5;2mINFO [0m ==> Configuring fsync
-nobility_read_replica  | [38;5;6mpostgresql [38;5;5m02:08:34.02 [0m[38;5;2mINFO [0m ==> Setting up streaming replication slave...
-nobility_read_replica  | [38;5;6mpostgresql [38;5;5m02:08:34.06 [0m[38;5;2mINFO [0m ==> Loading custom scripts...
-nobility_read_replica  | [38;5;6mpostgresql [38;5;5m02:08:34.06 [0m[38;5;2mINFO [0m ==> Enabling remote connections
-nobility_read_replica  | [38;5;6mpostgresql [38;5;5m02:08:34.07 [0m[38;5;2mINFO [0m ==> ** PostgreSQL setup finished! **
+nobility_read_replica  | [38;5;6mpostgresql [38;5;5m18:37:54.11 [0m[38;5;2mINFO [0m ==> Configuring replication parameters
+nobility_read_replica  | [38;5;6mpostgresql [38;5;5m18:37:54.15 [0m[38;5;2mINFO [0m ==> Configuring fsync
+nobility_read_replica  | [38;5;6mpostgresql [38;5;5m18:37:54.17 [0m[38;5;2mINFO [0m ==> Setting up streaming replication slave...
+nobility_read_replica  | [38;5;6mpostgresql [38;5;5m18:37:54.23 [0m[38;5;2mINFO [0m ==> Loading custom scripts...
+nobility_read_replica  | [38;5;6mpostgresql [38;5;5m18:37:54.24 [0m[38;5;2mINFO [0m ==> Enabling remote connections
+nobility_read_replica  | [38;5;6mpostgresql [38;5;5m18:37:54.25 [0m[38;5;2mINFO [0m ==> ** PostgreSQL setup finished! **
 nobility_read_replica  | 
-nobility_read_replica  | [38;5;6mpostgresql [38;5;5m02:08:34.09 [0m[38;5;2mINFO [0m ==> ** Starting PostgreSQL **
-nobility_read_replica  | 2026-11-12 02:08:34.110 GMT [1] LOG:  pgaudit extension initialized
-nobility_read_replica  | 2026-11-12 02:08:34.120 GMT [1] LOG:  starting PostgreSQL 16.4 on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
-nobility_read_replica  | 2026-11-12 02:08:34.120 GMT [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
-nobility_read_replica  | 2026-11-12 02:08:34.120 GMT [1] LOG:  listening on IPv6 address "::", port 5432
-nobility_read_replica  | 2026-11-12 02:08:34.122 GMT [1] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
-nobility_read_replica  | 2026-11-12 02:08:34.126 GMT [107] LOG:  database system was interrupted; last known up at 2026-11-12 02:08:33 GMT
-nobility_read_replica  | 2026-11-12 02:08:34.217 GMT [107] LOG:  entering standby mode
-nobility_read_replica  | 2026-11-12 02:08:34.217 GMT [107] LOG:  starting backup recovery with redo LSN 0/2000028, checkpoint LSN 0/2000060, on timeline ID 1
-nobility_read_replica  | 2026-11-12 02:08:34.219 GMT [107] LOG:  redo starts at 0/2000028
-nobility_read_replica  | 2026-11-12 02:08:34.220 GMT [107] LOG:  completed backup recovery with redo LSN 0/2000028 and end LSN 0/2000100
-nobility_read_replica  | 2026-11-12 02:08:34.220 GMT [107] LOG:  consistent recovery state reached at 0/2000100
-nobility_read_replica  | 2026-11-12 02:08:34.220 GMT [1] LOG:  database system is ready to accept read-only connections
-nobility_read_replica  | 2026-11-12 02:08:34.234 GMT [108] LOG:  started streaming WAL from primary at 0/3000000 on timeline 1
-nobility_read_replica  | 2026-11-12 02:10:36.565 GMT [116] ERROR:  relation "replication_test" does not exist at character 15
-nobility_read_replica  | 2026-11-12 02:10:36.565 GMT [116] STATEMENT:  SELECT * FROM replication_test;
-nobility_read_replica  | 2026-11-12 02:13:49.234 GMT [105] LOG:  restartpoint starting: time
-nobility_read_replica  | 2026-11-12 02:13:58.163 GMT [105] LOG:  restartpoint complete: wrote 91 buffers (0.6%); 0 WAL file(s) added, 0 removed, 0 recycled; write=8.923 s, sync=0.005 s, total=8.930 s; sync files=52, longest=0.002 s, average=0.001 s; distance=16798 kB, estimate=16798 kB; lsn=0/30678B0, redo lsn=0/3067878
-nobility_read_replica  | 2026-11-12 02:13:58.163 GMT [105] LOG:  recovery restart point at 0/3067878
-nobility_read_replica  | 2026-11-12 02:13:58.163 GMT [105] DETAIL:  Last completed transaction was at log time 2026-11-12 02:12:06.939572+00.
-nobility_primary       | [38;5;6mpostgresql [38;5;5m02:08:31.02 [0m[38;5;2mINFO [0m ==> Starting PostgreSQL in background...
-nobility_primary       | [38;5;6mpostgresql [38;5;5m02:08:32.14 [0m[38;5;2mINFO [0m ==> Creating user hospital_admin
-nobility_primary       | [38;5;6mpostgresql [38;5;5m02:08:32.16 [0m[38;5;2mINFO [0m ==> Granting access to "hospital_admin" to the database "nobility_hospital"
-nobility_primary       | [38;5;6mpostgresql [38;5;5m02:08:32.20 [0m[38;5;2mINFO [0m ==> Setting ownership for the 'public' schema database "nobility_hospital" to "hospital_admin"
-nobility_primary       | [38;5;6mpostgresql [38;5;5m02:08:32.22 [0m[38;5;2mINFO [0m ==> Creating replication user repl_user
-nobility_primary       | [38;5;6mpostgresql [38;5;5m02:08:32.26 [0m[38;5;2mINFO [0m ==> Configuring replication parameters
-nobility_primary       | [38;5;6mpostgresql [38;5;5m02:08:32.29 [0m[38;5;2mINFO [0m ==> Configuring synchronous_replication
-nobility_primary       | [38;5;6mpostgresql [38;5;5m02:08:32.29 [0m[38;5;2mINFO [0m ==> Configuring fsync
-nobility_primary       | [38;5;6mpostgresql [38;5;5m02:08:32.31 [0m[38;5;2mINFO [0m ==> Stopping PostgreSQL...
-nobility_primary       | waiting for server to shut down.... done
-nobility_primary       | server stopped
-nobility_primary       | [38;5;6mpostgresql [38;5;5m02:08:32.42 [0m[38;5;2mINFO [0m ==> Loading custom scripts...
-nobility_primary       | [38;5;6mpostgresql [38;5;5m02:08:32.43 [0m[38;5;2mINFO [0m ==> Enabling remote connections
-nobility_primary       | [38;5;6mpostgresql [38;5;5m02:08:32.44 [0m[38;5;2mINFO [0m ==> ** PostgreSQL setup finished! **
-nobility_primary       | 
-nobility_primary       | [38;5;6mpostgresql [38;5;5m02:08:32.47 [0m[38;5;2mINFO [0m ==> ** Starting PostgreSQL **
-nobility_primary       | 2026-11-12 02:08:32.486 GMT [1] LOG:  pgaudit extension initialized
-nobility_primary       | 2026-11-12 02:08:32.495 GMT [1] LOG:  starting PostgreSQL 16.4 on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
-nobility_primary       | 2026-11-12 02:08:32.496 GMT [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
-nobility_primary       | 2026-11-12 02:08:32.496 GMT [1] LOG:  listening on IPv6 address "::", port 5432
-nobility_primary       | 2026-11-12 02:08:32.497 GMT [1] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
-nobility_primary       | 2026-11-12 02:08:32.502 GMT [149] LOG:  database system was shut down at 2026-11-12 02:08:32 GMT
-nobility_primary       | 2026-11-12 02:08:32.508 GMT [1] LOG:  database system is ready to accept connections
-nobility_primary       | 2026-11-12 02:08:33.449 GMT [147] LOG:  checkpoint starting: force wait
-nobility_primary       | 2026-11-12 02:08:33.578 GMT [147] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.102 s, sync=0.002 s, total=0.129 s; sync files=3, longest=0.001 s, average=0.001 s; distance=7093 kB, estimate=7093 kB; lsn=0/2000060, redo lsn=0/2000028
-nobility_primary       | 2026-11-12 02:13:33.677 GMT [147] LOG:  checkpoint starting: time
-nobility_primary       | 2026-11-12 02:13:43.009 GMT [147] LOG:  checkpoint complete: wrote 94 buffers (0.6%); 0 WAL file(s) added, 0 removed, 0 recycled; write=9.324 s, sync=0.005 s, total=9.333 s; sync files=52, longest=0.001 s, average=0.001 s; distance=16798 kB, estimate=16798 kB; lsn=0/30678B0, redo lsn=0/3067878
+nobility_read_replica  | [38;5;6mpostgresql [38;5;5m18:37:54.28 [0m[38;5;2mINFO [0m ==> ** Starting PostgreSQL **
+nobility_read_replica  | 2026-11-15 18:37:54.304 GMT [1] LOG:  pgaudit extension initialized
+nobility_read_replica  | 2026-11-15 18:37:54.320 GMT [1] LOG:  starting PostgreSQL 16.4 on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+nobility_read_replica  | 2026-11-15 18:37:54.321 GMT [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+nobility_read_replica  | 2026-11-15 18:37:54.323 GMT [1] LOG:  listening on IPv6 address "::", port 5432
+nobility_read_replica  | 2026-11-15 18:37:54.327 GMT [1] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+nobility_read_replica  | 2026-11-15 18:37:54.362 GMT [109] LOG:  database system was interrupted; last known up at 2026-11-15 18:37:53 GMT
+nobility_read_replica  | 2026-11-15 18:37:54.472 GMT [109] LOG:  entering standby mode
+nobility_read_replica  | 2026-11-15 18:37:54.474 GMT [109] LOG:  starting backup recovery with redo LSN 0/2000028, checkpoint LSN 0/2000060, on timeline ID 1
+nobility_read_replica  | 2026-11-15 18:37:54.479 GMT [109] LOG:  redo starts at 0/2000028
+nobility_read_replica  | 2026-11-15 18:37:54.480 GMT [109] LOG:  completed backup recovery with redo LSN 0/2000028 and end LSN 0/2000100
+nobility_read_replica  | 2026-11-15 18:37:54.480 GMT [109] LOG:  consistent recovery state reached at 0/2000100
+nobility_read_replica  | 2026-11-15 18:37:54.480 GMT [1] LOG:  database system is ready to accept read-only connections
+nobility_read_replica  | 2026-11-15 18:37:54.535 GMT [110] LOG:  started streaming WAL from primary at 0/3000000 on timeline 1
