@@ -1,4 +1,6 @@
 # Portfolio 1: Database Design and Modelling - Nobility Hospital
+**Case Study:** Nobility Hospital System  
+**Course:** MIT 8103 Advanced Database Systems  
 
 ## 1. Case Study Overview
 * **Organisation Name:** Nobility Hospital
