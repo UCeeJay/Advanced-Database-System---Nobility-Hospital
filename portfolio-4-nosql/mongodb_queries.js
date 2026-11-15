@@ -6,7 +6,7 @@
 // =========================================================================
 
 // 1. Database and Collection Initialization
-use nobility_hospital_telemetry;
+db = db.getSiblingDB("nobility_hospital_telemetry");
 db.createCollection("patient_vitals_log");
 
 // 2. Data Ingestion (Implementation Evidence)
