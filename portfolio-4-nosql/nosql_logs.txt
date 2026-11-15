@@ -1,0 +1,54 @@
+
+=== 1. Collection Initialization ===
+{
+  ok: 1
+}
+
+=== 2. Data Ingestion ===
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('6af4ccb176e60847755a51e1'),
+    '1': ObjectId('6af4ccb176e60847755a51e2'),
+    '2': ObjectId('6af4ccb176e60847755a51e3')
+  }
+}
+
+=== 3. Performance Indexing ===
+patient_id_1_timestamp_-1
+
+=== 4. Query Example A: Critical Alert Filtering ===
+[
+  {
+    _id: ObjectId('6af4ccb176e60847755a51e3'),
+    patient_id: 2088,
+    device_type: 'Smart_Pulse_Oximeter',
+    timestamp: ISODate('2026-11-15T11:05:00.000Z'),
+    readings: {
+      heart_rate_bpm: 72,
+      oxygen_saturation_spO2: 89
+    },
+    flags: [
+      'CRITICAL_SPO2_DROP'
+    ],
+    clinical_context: {
+      notified_nurse_station: true,
+      automated_alert_time: ISODate('2026-11-15T11:05:02.000Z')
+    }
+  }
+]
+
+=== 5. Query Example B: Aggregation Pipeline ===
+[
+  {
+    _id: {
+      year: 2026,
+      month: 11,
+      day: 15
+    },
+    avg_heart_rate: 101.5,
+    max_heart_rate: 115,
+    min_heart_rate: 88,
+    reading_count: 2
+  }
+]
